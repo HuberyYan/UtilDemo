@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.example</groupId>
+  <artifactId>Demo</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>Demo</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>5.8.9</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
+    <dependency>
+      <groupId>org.freemarker</groupId>
+      <artifactId>freemarker</artifactId>
+      <version>2.3.31</version>
+    </dependency>
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>1.2.29</version>
+    </dependency>
+
+    <!--  html转pdf start -->
+<!--    <dependency>-->
+<!--      <groupId>com.github.librepdf</groupId>-->
+<!--      <artifactId>openpdf</artifactId>-->
+<!--      <version>1.3.26</version>-->
+<!--    </dependency>-->
+<!--    &lt;!&ndash; 添加 openhtmltopdf 依赖 &ndash;&gt;-->
+    <dependency>
+      <groupId>com.openhtmltopdf</groupId>
+      <artifactId>openhtmltopdf-pdfbox</artifactId>
+      <version>1.0.10</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/io.woo/htmltopdf -->
+    <dependency>
+      <groupId>io.woo</groupId>
+      <artifactId>htmltopdf</artifactId>
+      <version>1.0.8</version>
+    </dependency>
+    <!--  html转pdf end -->
+
+    <!--  html转ofd start -->
+    <dependency>
+      <groupId>org.apache.pdfbox</groupId>
+      <artifactId>pdfbox</artifactId>
+      <version>2.0.24</version>
+    </dependency>
+    <!--  html转ofd end -->
+
+    <!--  pdf 转 ofd start -->
+    <dependency>
+      <groupId>org.ofdrw</groupId>
+      <artifactId>ofdrw-converter</artifactId>
+      <version>2.3.4</version>
+    </dependency>
+    <!--  pdf 转 ofd end -->
+  </dependencies>
+</project>
